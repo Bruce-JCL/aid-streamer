@@ -31,20 +31,20 @@ cap = aidstream.ast()
 with open('config.json','r',encoding = 'utf-8') as fp:
     data = json.load(fp)
 for url in data:
-    if "h264" in data[str(url)]:
-        cap.add(data[str(url)], inputFormat = "video/avc") 
-    elif "h265" in data[str(url)]:
+    if "h265" in data[str(url)]:
         cap.add(data[str(url)], inputFormat = "video/hevc") 
+    else:
+        cap.add(data[str(url)], inputFormat = "video/avc") 
 
 cap.build()
 
 # showH=270
 # showW=480
-showH=540
-showW=960
+showH=1080
+showW=1920
 # showH=360
 # showW=640
-numChan=4
+numChan=1
 
 
 
