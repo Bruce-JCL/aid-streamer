@@ -10,9 +10,9 @@ logDestinations: [stdout]
 logFile: rtsp-simple-server.log
 
 # Timeout of read operations.
-readTimeout: 10s
+readTimeout: 30s
 # Timeout of write operations.
-writeTimeout: 10s
+writeTimeout: 30s
 # Number of read buffers.
 # A higher value allows a wider throughput, a lower value allows to save RAM.
 readBufferCount: 512
